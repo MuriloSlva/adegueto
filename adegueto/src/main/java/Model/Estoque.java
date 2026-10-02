@@ -37,16 +37,17 @@ public class Estoque {
     }
     
     public void adicionar() {
-        // Sem implementação ainda
+        quantidade++;
     }
 
     public void remover() {
-        // Sem implementação ainda
+        if (quantidade > 0){
+            quantidade --;
+        }
     }
 
     public boolean checaMin() {
-        // Sem implementação ainda
-        return false;
+        return quantidade <= estoqueMin;
     }
     
 }
